@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 5274133242546768903, guid: e4d31975fab6a134e93b7f00267f454b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5274133242546768903, guid: e4d31975fab6a134e93b7f00267f454b,
         type: 3}
@@ -483,7 +483,7 @@ PrefabInstance:
     - target: {fileID: 2755893951521451563, guid: 68406e736365f454f986afb4426f6df1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2755893951521451563, guid: 68406e736365f454f986afb4426f6df1,
         type: 3}
@@ -519,6 +519,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -534,6 +535,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f73ad3c3f4bc34c9f59f045a01c3fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveCamera: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -648,7 +662,7 @@ PrefabInstance:
     - target: {fileID: 3331087635597517909, guid: 1ef465ffd484cfa4bb7eeadc3db17238,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3331087635597517909, guid: 1ef465ffd484cfa4bb7eeadc3db17238,
         type: 3}
@@ -757,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 5274133242546768903, guid: e4d31975fab6a134e93b7f00267f454b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5274133242546768903, guid: e4d31975fab6a134e93b7f00267f454b,
         type: 3}
@@ -838,7 +852,7 @@ PrefabInstance:
     - target: {fileID: 2755893951521451563, guid: 68406e736365f454f986afb4426f6df1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2755893951521451563, guid: 68406e736365f454f986afb4426f6df1,
         type: 3}
@@ -874,6 +888,7 @@ GameObject:
   - component: {fileID: 874644560}
   - component: {fileID: 874644561}
   - component: {fileID: 874644562}
+  - component: {fileID: 874644563}
   m_Layer: 0
   m_Name: Cloud Collector
   m_TagString: Untagged
@@ -933,6 +948,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637c47810b4ea6d41b53bcedfbaa189c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &874644563
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874644559}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &918076629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -983,7 +1019,7 @@ PrefabInstance:
     - target: {fileID: 1363474122922328465, guid: 6ad72345869b6bc4a9837c0e84c876f9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1363474122922328465, guid: 6ad72345869b6bc4a9837c0e84c876f9,
         type: 3}
@@ -1018,6 +1054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 985268013}
   - component: {fileID: 985268014}
+  - component: {fileID: 985268016}
   - component: {fileID: 985268015}
   m_Layer: 0
   m_Name: Cloud Spawner
@@ -1088,6 +1125,27 @@ MonoBehaviour:
   - {fileID: 137670351}
   - {fileID: 918076630}
   collectibles: []
+--- !u!50 &985268016
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985268012}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1043519477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,7 +1315,7 @@ PrefabInstance:
     - target: {fileID: 3331087635597517909, guid: 1ef465ffd484cfa4bb7eeadc3db17238,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3331087635597517909, guid: 1ef465ffd484cfa4bb7eeadc3db17238,
         type: 3}
@@ -1645,7 +1703,7 @@ PrefabInstance:
     - target: {fileID: 6137394405403391886, guid: bfa43941b3c76104bac4bd83f9239fe2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6137394405403391886, guid: bfa43941b3c76104bac4bd83f9239fe2,
         type: 3}
@@ -1676,6 +1734,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137394405403391885, guid: bfa43941b3c76104bac4bd83f9239fe2,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfa43941b3c76104bac4bd83f9239fe2, type: 3}

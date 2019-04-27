@@ -25,6 +25,14 @@ public class CloudSpawner : MonoBehaviour
         controlX = 0f;
         SetMinAndMaxX();
         CreateClouds();
+        //Doing this to have a reference to the player for positioning it
+        player = GameObject.Find("Player");
+    }
+
+    void Start()
+    {
+        //We will position the player on the first cloud
+        PositionThePlayer();
     }
 
     void SetMinAndMaxX()
@@ -50,7 +58,7 @@ public class CloudSpawner : MonoBehaviour
     {
         Shuffle(clouds);
 
-        float positionY = 0f;
+        float positionY = 0f; //Starting to put clouds from y = 0 and then proceeding downwards
 
         for(int i = 0; i < clouds.Length; i++)
         {
@@ -83,5 +91,41 @@ public class CloudSpawner : MonoBehaviour
 
             positionY -= distanceBetweenClouds;
         }
+    }
+
+    void PositionThePlayer()
+    {
+        GameObject[] darkClouds = GameObject.FindGameObjectsWithTag("Deadly");
+        GameObject[] cloudsInGame = GameObject.FindGameObjectsWithTag("Cloud");
+
+        //Code to make sure we are not stepping initially on a dark cloud but on a white one. Checking all the dark clouds if they will be spawned @ y = 0
+        for(int i = 0; i < darkClouds.Length; i++)      
+        {
+            if(darkClouds[i].transform.position.y == 0f)
+            {
+                Vector3 t = darkClouds[i].transform.position;
+
+                //Swapping dark cloud with a white cloud if the initial cloud is a dark cloud
+                darkClouds[i].transform.position = new Vector3(cloudsInGame[0].transform.position.x, cloudsInGame[0].transform.position.y, cloudsInGame[0].transform.position.z);
+                cloudsInGame[0].transform.position = t;
+            }
+        }
+
+        //Now after the above fix we are going to position the player
+        Vector3 temp = cloudsInGame[0].transform.position;
+
+        //In this code we are trying to find the cloud which is nearest or equal to y = 0
+        for(int i = 1; i < cloudsInGame.Length; i++)
+        {
+            if(temp.y < cloudsInGame[i].transform.position.y)
+            {
+                temp = cloudsInGame[i].transform.position;
+            }
+        }
+
+        //Adding this so as to position the player above the cloud and so the player should not fall off the cloud right at the start
+        temp.y += 0.8f;
+        player.transform.position = temp;
+
     }
 }
