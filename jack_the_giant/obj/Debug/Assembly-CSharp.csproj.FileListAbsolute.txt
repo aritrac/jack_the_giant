@@ -196,3 +196,15 @@ D:\Aspirations\jack_the_giant\jack_the_giant\obj\Debug\Assembly-CSharp.csproj.Co
 D:\Aspirations\jack_the_giant\jack_the_giant\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Aspirations\jack_the_giant\jack_the_giant\obj\Debug\Assembly-CSharp.dll
 D:\Aspirations\jack_the_giant\jack_the_giant\obj\Debug\Assembly-CSharp.pdb
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Data.Common.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Diagnostics.Tracing.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Globalization.Extensions.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.IO.Compression.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Net.Http.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Net.Sockets.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Security.SecureString.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Threading.Overlapped.dll
+D:\Aspirations\jack_the_giant\jack_the_giant\Temp\bin\Debug\System.Xml.XPath.XDocument.dll

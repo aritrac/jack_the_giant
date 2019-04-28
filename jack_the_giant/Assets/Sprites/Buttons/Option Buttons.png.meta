@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: ffa71d1e39ad52745be83ca2ebc7a51c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5179584104419866947
+    second: Easy Button
+  - first:
+      213: -2867560600216070316
+    second: Medium Button
+  - first:
+      213: -8874987180359250128
+    second: Hard Button
+  - first:
+      213: -4174323921061224676
+    second: Check Sign
+  - first:
+      213: 7337215400712308837
+    second: Back Button
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -60,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -71,7 +86,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -82,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -93,7 +108,112 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Easy Button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 253
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd145e8d672548246beca1731b48bad4
+      internalID: -5179584104419866947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium Button
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 124
+        width: 253
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7659361d0aed0c4f9128f1d7951b647
+      internalID: -2867560600216070316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hard Button
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 58
+        width: 253
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084d2162efbcf5f44a065b4ae33b2578
+      internalID: -8874987180359250128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Check Sign
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 15
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd2b377660632843a14a4388a467e1e
+      internalID: -4174323921061224676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back Button
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377a4dec26454e44d8dc6b0258a1e70d
+      internalID: 7337215400712308837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

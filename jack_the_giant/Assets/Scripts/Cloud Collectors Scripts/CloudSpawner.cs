@@ -128,4 +128,61 @@ public class CloudSpawner : MonoBehaviour
         player.transform.position = temp;
 
     }
+
+    void OnTriggerEnter2D(Collider2D target)
+    {
+        if(target.tag == "Cloud" || target.tag == "Deadly")
+        {
+            if(target.transform.position.y == lastCloudPositionY)
+            {
+                Shuffle(clouds);
+                Shuffle(collectibles);
+
+                Vector3 temp = target.transform.position;
+
+                for(int i = 0; i < clouds.Length; i++)
+                {
+                    //randomize the position of only those clouds which are not currently visible in the game
+                    if (!clouds[i].activeInHierarchy)
+                    {
+                        //toggling between left side cloud spawn and right side cloud spawn using the code below to create a zig zag pattern for cloud formation
+                        if (controlX == 0)
+                        {
+                            temp.x = Random.Range(0.0f, maxX);
+                            controlX = 1;
+                        }
+                        else if (controlX == 1)
+                        {
+                            temp.x = Random.Range(0.0f, minX);
+                            controlX = 2;
+                        }
+                        else if (controlX == 2)
+                        {
+                            temp.x = Random.Range(1.0f, maxX);
+                            controlX = 3;
+                        }
+                        else if (controlX == 3)
+                        {
+                            temp.x = Random.Range(-1.0f, minX);
+                            controlX = 0;
+                        }
+
+                        //maintaining the distance of the new cloud which will be spawned from the previous active cloud
+                        temp.y -= distanceBetweenClouds;
+
+                        //saving the new last cloud position as this is the new last cloud
+                        lastCloudPositionY = temp.y;
+
+                        //assign the position to the ith cloud
+                        clouds[i].transform.position = temp;
+
+                        //setting the cloud to be now visible in the hierarchy
+                        clouds[i].SetActive(true);
+
+
+                    }
+                }  
+            }
+        }
+    }
 }

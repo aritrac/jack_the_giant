@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: 6111b3495a4184a4289a09ebd9331e4a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8012656256359148979
+    second: Start Game Button
+  - first:
+      213: -8644210191980000207
+    second: Highscore Button
+  - first:
+      213: 5206608035124378820
+    second: Options Button
+  - first:
+      213: -40998898920023330
+    second: Quit Button
+  - first:
+      213: -2301582473792269315
+    second: Music Off Button
+  - first:
+      213: -6390875343816520129
+    second: Music On Button
+  - first:
+      213: -7672734167354993004
+    second: Quit Button
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -60,10 +81,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,10 +92,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,10 +103,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +114,133 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Start Game Button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 204
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db603b92da203674abe3744136b4e0b8
+      internalID: 8012656256359148979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Highscore Button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 204
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0371fe5587a9c44a4db5810ee6330c
+      internalID: -8644210191980000207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Options Button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 204
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac0fc476b030c44e8133db3561ae60d
+      internalID: 5206608035124378820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music Off Button
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c412bd96b7727d4f99aa0f1c8160d2c
+      internalID: -2301582473792269315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music On Button
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d602a93fe6671824596f596151ddaa0c
+      internalID: -6390875343816520129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quit Button
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 53
+        width: 203
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4602343f4e7161f4386f25e0c28955d4
+      internalID: -7672734167354993004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
